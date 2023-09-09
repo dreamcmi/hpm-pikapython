@@ -15,6 +15,8 @@ sdk_compile_definitions(-DCONFIG_FREERTOS=1)
 sdk_compile_definitions(-DUSE_NONVECTOR_MODE=1)
 sdk_compile_definitions(-DDISABLE_IRQ_PREEMPTIVE=1)
 
+sdk_compile_definitions(-DPIKA_FREERTOS_ENABLE=1)
+
 # sdk_compile_options(-mabi=ilp32d)
 # sdk_compile_options(-march=rv32gc)
 # sdk_compile_options("-Os")
@@ -44,6 +46,8 @@ sdk_app_src(pikascript-lib/PikaStdLib/PikaStdLib_RangeObj.c)
 sdk_app_src(pikascript-lib/PikaStdLib/PikaStdLib_StringObj.c)
 sdk_app_src(pikascript-lib/PikaStdLib/PikaStdLib_SysObj.c)
 sdk_app_src(pikascript-lib/PikaStdLib/PikaStdTask_Task.c)
+
+sdk_app_src(pikascript-lib/time/_time.c)
 
 sdk_app_src(pikascript-core/BaseObj.c)
 sdk_app_src(pikascript-core/dataArg.c)

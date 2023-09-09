@@ -27,3 +27,11 @@ void* pika_platform_malloc(size_t size) {
 void pika_platform_free(void* ptr) {
     vPortFree(ptr);
 }
+
+void pika_platform_sleep_ms(uint32_t ms) {
+    vTaskDelay(pdMS_TO_TICKS(ms));
+}
+
+void pika_platform_sleep_s(uint32_t s) {
+    vTaskDelay(pdMS_TO_TICKS(1000 * s));
+}
