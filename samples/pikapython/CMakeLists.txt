@@ -33,6 +33,7 @@ sdk_app_inc(pikascript-lib/PikaStdLib)
 sdk_app_src(src/app_main.c)
 sdk_app_src(src/pika_config.c)
 
+# PikaStdLib src
 sdk_app_src(pikascript-lib/PikaStdLib/PikaDebuger_Debuger.c)
 sdk_app_src(pikascript-lib/PikaStdLib/PikaStdData_ByteArray.c)
 sdk_app_src(pikascript-lib/PikaStdLib/PikaStdData_Dict.c)
@@ -47,8 +48,46 @@ sdk_app_src(pikascript-lib/PikaStdLib/PikaStdLib_StringObj.c)
 sdk_app_src(pikascript-lib/PikaStdLib/PikaStdLib_SysObj.c)
 sdk_app_src(pikascript-lib/PikaStdLib/PikaStdTask_Task.c)
 
+# time src
 sdk_app_src(pikascript-lib/time/_time.c)
 
+# binascii src
+sdk_app_src(pikascript-lib/binascii/binascii.c)
+
+# PikaStdDevice src
+sdk_app_src(pikascript-lib/PikaStdDevice/pika_hal_SOFT_IIC.c)
+sdk_app_src(pikascript-lib/PikaStdDevice/pika_hal_SOFT_SPI.c)
+sdk_app_src(pikascript-lib/PikaStdDevice/pika_hal.c)
+sdk_app_src(pikascript-lib/PikaStdDevice/PikaStdDevice_ADC.c)
+sdk_app_src(pikascript-lib/PikaStdDevice/PikaStdDevice_BaseDev.c)
+sdk_app_src(pikascript-lib/PikaStdDevice/PikaStdDevice_CAN.c)
+sdk_app_src(pikascript-lib/PikaStdDevice/PikaStdDevice_common.c)
+sdk_app_src(pikascript-lib/PikaStdDevice/PikaStdDevice_DAC.c)
+sdk_app_src(pikascript-lib/PikaStdDevice/PikaStdDevice_GPIO.c)
+sdk_app_src(pikascript-lib/PikaStdDevice/PikaStdDevice_IIC.c)
+sdk_app_src(pikascript-lib/PikaStdDevice/PikaStdDevice_PWM.c)
+sdk_app_src(pikascript-lib/PikaStdDevice/PikaStdDevice_SPI.c)
+sdk_app_src(pikascript-lib/PikaStdDevice/PikaStdDevice_UART.c)
+
+# random src
+sdk_app_src(pikascript-lib/random/_random.c)
+
+# re src
+# sdk_app_src(pikascript-lib/re/cre.c)
+# sdk_app_src(pikascript-lib/re/pcre_chartables.c)
+# sdk_app_src(pikascript-lib/re/pcre_compile.c)
+# sdk_app_src(pikascript-lib/re/pcre_exec.c)
+# sdk_app_src(pikascript-lib/re/pcre_fullinfo.c)
+# sdk_app_src(pikascript-lib/re/pcre_globals.c)
+# sdk_app_src(pikascript-lib/re/pcre_newline.c)
+# sdk_app_src(pikascript-lib/re/pcre_ord2utf8.c)
+# sdk_app_src(pikascript-lib/re/pcre_tables.c)
+# sdk_app_src(pikascript-lib/re/pcre_try_flipped.c)
+# sdk_app_src(pikascript-lib/re/pcre_valid_utf8.c)
+# sdk_app_src(pikascript-lib/re/pcre_xclass.c)
+# sdk_app_src(pikascript-lib/re/re-api-adapter.c)
+
+# pika-core src
 sdk_app_src(pikascript-core/BaseObj.c)
 sdk_app_src(pikascript-core/dataArg.c)
 sdk_app_src(pikascript-core/dataArgs.c)
@@ -67,6 +106,7 @@ sdk_app_src(pikascript-core/PikaPlatform.c)
 sdk_app_src(pikascript-core/PikaVM.c)
 sdk_app_src(pikascript-core/TinyObj.c)
 
+# pika-api src
 sdk_app_src(pikascript-api/__asset_pikaModules_py_a.c)
 sdk_app_src(pikascript-api/__pikaBinding.c)
 sdk_app_src(pikascript-api/pikaScript.c)

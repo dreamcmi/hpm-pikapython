@@ -1,5 +1,10 @@
 import PikaStdLib
 import time
+import PikaStdDevice
+import binascii
+import random
+import configparser
+# import re
 
 print('hello pikapython!')
 print('Run in HPM6750 MCU!')
@@ -9,6 +14,3 @@ print('mem.max :')
 mem.max()
 print('mem.now :')
 mem.now()
-
-time.sleep_ms(1000)
-print("sleep ok")
