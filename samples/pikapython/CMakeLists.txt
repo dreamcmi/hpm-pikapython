@@ -4,8 +4,8 @@
 cmake_minimum_required(VERSION 3.13)
 
 set(CONFIG_FREERTOS 1)
-# set(CONFIG_PIKAPYTHON 1)
-# set(SES_TOOLCHAIN_VARIANT "Andes")
+set(CONFIG_MBEDTLS 1)
+set(CONFIG_MBEDTLS_USE_HPM_SDP 1)
 
 find_package(hpm-sdk REQUIRED HINTS $ENV{HPM_SDK_BASE})
 project(pikapython)
@@ -14,6 +14,9 @@ sdk_compile_definitions(-D__freertos_irq_stack_top=_stack)
 sdk_compile_definitions(-DCONFIG_FREERTOS=1)
 sdk_compile_definitions(-DUSE_NONVECTOR_MODE=1)
 sdk_compile_definitions(-DDISABLE_IRQ_PREEMPTIVE=1)
+
+sdk_compile_definitions(-DMBEDTLS_CONFIG_FILE="hpm_sdk_mbedtls_config.h")
+sdk_compile_definitions(-DCONFIG_MBEDTLS_USE_HPM_SDP=1)
 
 sdk_compile_definitions(-DPIKA_FREERTOS_ENABLE=1)
 
@@ -87,6 +90,18 @@ sdk_app_src(pikascript-lib/random/_random.c)
 # sdk_app_src(pikascript-lib/re/pcre_valid_utf8.c)
 # sdk_app_src(pikascript-lib/re/pcre_xclass.c)
 # sdk_app_src(pikascript-lib/re/re-api-adapter.c)
+
+# aes src
+sdk_app_src(pikascript-lib/aes/_aes_AES.c)
+
+# base64 src
+sdk_app_src(pikascript-lib/base64/_base64.c)
+
+# hashlib src
+sdk_app_src(pikascript-lib/hashlib/_hashlib_Hash.c)
+
+# hmac src
+sdk_app_src(pikascript-lib/hmac/_hmac_HMAC.c)
 
 # pika-core src
 sdk_app_src(pikascript-core/BaseObj.c)

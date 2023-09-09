@@ -5,6 +5,10 @@ import binascii
 import random
 import configparser
 # import re
+import aes
+import base64
+import hashlib
+import hmac
 
 print('hello pikapython!')
 print('Run in HPM6750 MCU!')
