@@ -28,9 +28,3 @@ uint64_t __bswapdi2 (uint64_t u)
         | (((u) & 0x00000000000000ffull) << 56));
 }
 #endif
-
-int __ucmpdi2 (unsigned long a, unsigned long b){
-    if(a < b) return 0;
-    if(a > b) return 2;
-    if(a == b) return 1;
-}
