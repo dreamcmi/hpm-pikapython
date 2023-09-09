@@ -1,0 +1,17 @@
+{
+    "configurations": [
+        {
+            "name": "hpm",
+            "includePath": [
+                "${workspaceFolder}/**"
+            ],
+            "defines": [
+            ],
+            "cStandard": "c99",
+            "cppStandard": "c++11",
+            "intelliSenseMode": "gcc-arm",
+            "compilerPath": "../toolchains/rv32imac-ilp32-multilib-win/bin/riscv32-unknown-elf-gcc.exe"
+        }
+    ],
+    "version": 4
+}
