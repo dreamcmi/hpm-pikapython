@@ -29,6 +29,7 @@ sdk_inc(src)
 sdk_app_inc(pikascript-api)
 sdk_app_inc(pikascript-core)
 sdk_app_inc(pikascript-lib/PikaStdLib)
+sdk_app_inc(pikascript-lib/PikaStdDevice)
 
 sdk_app_src(src/app_main.c)
 sdk_app_src(src/pika_config.c)
