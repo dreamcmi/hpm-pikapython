@@ -24,12 +24,13 @@ static void pika_task(void *pvParameters)
 {
     (void)pvParameters;
     printf("[SYSTEM]enter pika task\n");
-    //pikaScriptInit();
+
     PikaObj* pikaMain = newRootObj("pikaMain", New_PikaMain);
     extern unsigned char pikaModules_py_a[];
     obj_linkLibrary(pikaMain, pikaModules_py_a);
     pikaScriptShell(pikaMain);
     obj_deinit(pikaMain);
+
     printf("[SYSTEM]leave pika task\n");
     vTaskDelete(NULL);
 }
