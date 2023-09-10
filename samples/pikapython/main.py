@@ -9,6 +9,7 @@ import aes
 import base64
 import hashlib
 import hmac
+import PikaMath
 
 print('hello pikapython!')
 print('Run in HPM6750 MCU!')

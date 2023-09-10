@@ -104,6 +104,11 @@ sdk_app_src(pikascript-lib/hashlib/_hashlib_Hash.c)
 # hmac src
 sdk_app_src(pikascript-lib/hmac/_hmac_HMAC.c)
 
+# pika math src
+sdk_app_src(pikascript-lib/PikaMath/PikaMath_Math.c)
+sdk_app_src(pikascript-lib/PikaMath/PikaMath_Operator.c)
+sdk_app_src(pikascript-lib/PikaMath/PikaMath_Quaternion.c)
+
 # pika-core src
 sdk_app_src(pikascript-core/BaseObj.c)
 sdk_app_src(pikascript-core/dataArg.c)
