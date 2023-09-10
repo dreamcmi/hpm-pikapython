@@ -177,7 +177,7 @@
 #else /* portUSING_MPU_WRAPPERS */
 
     #define PRIVILEGED_FUNCTION
-    #define PRIVILEGED_DATA
+    #define PRIVILEGED_DATA  __attribute__((section(".fast_ram")))
     #define FREERTOS_SYSTEM_CALL
 
 #endif /* portUSING_MPU_WRAPPERS */
