@@ -35,6 +35,7 @@
 #define configIDLE_SHOULD_YIELD                 0
 #define configUSE_APPLICATION_TASK_TAG          0
 #define configGENERATE_RUN_TIME_STATS           0
+#define configUSE_MUTEXES                       1
 
 /* Memory allocation definitions. */
 #define configSUPPORT_STATIC_ALLOCATION         0
