@@ -34,6 +34,8 @@ sdk_app_inc(pikascript-core)
 sdk_app_inc(pikascript-lib/PikaStdLib)
 sdk_app_inc(pikascript-lib/PikaStdDevice)
 sdk_app_inc(pikascript-lib/re)
+sdk_app_inc(pikascript-lib/json)
+sdk_app_inc(pikascript-lib/pika_cjson)
 
 sdk_app_src(src/app_main.c)
 sdk_app_src(src/pika_config.c)
@@ -108,6 +110,15 @@ sdk_app_src(pikascript-lib/hmac/_hmac_HMAC.c)
 sdk_app_src(pikascript-lib/PikaMath/PikaMath_Math.c)
 sdk_app_src(pikascript-lib/PikaMath/PikaMath_Operator.c)
 sdk_app_src(pikascript-lib/PikaMath/PikaMath_Quaternion.c)
+
+# pika json src
+sdk_app_src(pikascript-lib/json/_json.c)
+sdk_app_src(pikascript-lib/json/_pika_cJSON.c)
+
+sdk_app_src(pikascript-lib/pika_cjson/cJSON.c)
+sdk_app_src(pikascript-lib/pika_cjson/pika_cjson_cJSON.c)
+sdk_app_src(pikascript-lib/pika_cjson/pika_cjson_item.c)
+sdk_app_src(pikascript-lib/pika_cjson/pika_cjson.c)
 
 # pika-core src
 sdk_app_src(pikascript-core/BaseObj.c)

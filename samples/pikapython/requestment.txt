@@ -11,3 +11,5 @@ aes==v0.0.2
 base64==v1.0.1
 re==v0.1.4
 PikaMath==v0.2.3
+pika_cjson==v1.2.5
+json==v0.1.5
