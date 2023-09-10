@@ -111,6 +111,8 @@ sdk_app_src(pikascript-lib/PikaMath/PikaMath_Math.c)
 sdk_app_src(pikascript-lib/PikaMath/PikaMath_Operator.c)
 sdk_app_src(pikascript-lib/PikaMath/PikaMath_Quaternion.c)
 
+sdk_app_src(pikascript-lib/math/_math.c)
+
 # pika json src
 sdk_app_src(pikascript-lib/json/_json.c)
 sdk_app_src(pikascript-lib/json/_pika_cJSON.c)
