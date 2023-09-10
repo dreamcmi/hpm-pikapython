@@ -120,6 +120,9 @@ sdk_app_src(pikascript-lib/pika_cjson/pika_cjson_cJSON.c)
 sdk_app_src(pikascript-lib/pika_cjson/pika_cjson_item.c)
 sdk_app_src(pikascript-lib/pika_cjson/pika_cjson.c)
 
+# _thread src
+sdk_app_src(pikascript-lib/_thread/_thread.c)
+
 # pika-core src
 sdk_app_src(pikascript-core/BaseObj.c)
 sdk_app_src(pikascript-core/dataArg.c)

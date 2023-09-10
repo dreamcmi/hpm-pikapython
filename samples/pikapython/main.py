@@ -12,6 +12,7 @@ import hmac
 import PikaMath
 import pika_cjson
 import json
+import _thread
 
 print('hello pikapython!')
 print('Run in HPM6750 MCU!')

@@ -13,3 +13,4 @@ re==v0.1.4
 PikaMath==v0.2.3
 pika_cjson==v1.2.5
 json==v0.1.5
+_thread==v0.0.6
