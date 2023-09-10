@@ -4,7 +4,7 @@ import PikaStdDevice
 import binascii
 import random
 import configparser
-# import re
+import re
 import aes
 import base64
 import hashlib
