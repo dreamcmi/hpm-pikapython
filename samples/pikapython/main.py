@@ -14,6 +14,8 @@ import pika_cjson
 import json
 import _thread
 import math
+import fsm
+import eventloop
 
 print('hello pikapython!')
 print('Run in HPM6750 MCU!')
