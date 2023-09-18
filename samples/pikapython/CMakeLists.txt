@@ -125,6 +125,15 @@ sdk_app_src(pikascript-lib/pika_cjson/pika_cjson.c)
 # _thread src
 sdk_app_src(pikascript-lib/_thread/_thread.c)
 
+#pika hal port src
+sdk_app_src(pikascript-lib/hpmicro/pikahal_gpio.c)
+sdk_app_src(pikascript-lib/hpmicro/pikahal_adc.c)
+sdk_app_src(pikascript-lib/hpmicro/pikahal_iic.c)
+sdk_app_src(pikascript-lib/hpmicro/pikahal_pwm.c)
+sdk_app_src(pikascript-lib/hpmicro/pikahal_uart.c)
+sdk_app_src(pikascript-lib/hpmicro/pikahal_spi.c)
+sdk_app_src(pikascript-lib/hpmicro/pikahal_can.c)
+
 # pika-core src
 sdk_app_src(pikascript-core/BaseObj.c)
 sdk_app_src(pikascript-core/dataArg.c)
